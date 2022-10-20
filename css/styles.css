@@ -305,14 +305,15 @@ margin-top: 0;
 .service-icon {
 fill: var(--icon-color);
 }
-
-.service-icon:hover,
-.service-icon:focus {
-fill:var(--color-caption);
-}
 .social-list-ikon:hover,
 .social-list-ikon:focus {
-background-color:var(--accent-color);
+    background-color: var(--accent-color);
+}
+.social-list-ikon:hover .service-icon {
+    fill: var(--color-caption);
+}
+.social-list-ikon:focus .service-icon {
+    fill: var(--color-caption);
 }
 .social-link {
 display: flex;
@@ -332,7 +333,6 @@ margin-top:16px;
     border-radius: 50%;
     background-color:var(--color-caption);
     margin: 0 auto;
-    fill:var(--icon-color);
 }
 
 /* cторінка 2 */
@@ -401,7 +401,6 @@ text-decoration: none;
 .photo-link-item:hover,
 .photo-link-item:focus {
     background: var(--color-caption);
-    border: 1px solid #EEEEEE;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
         0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -413,7 +412,8 @@ text-decoration: none;
 }
 .flex-element {
     padding: 30px;
-    border-top: 0;
+    border-top:none;
+    border: 1px solid #EEEEEE;
 }
 .section-element {
     background-color: var(--color-caption);
