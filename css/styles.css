@@ -395,7 +395,7 @@ margin-top:16px;
     flex-basis: calc((100%-60px)/3);
 }
 .photo-link-item {
-    display: block;
+display: block;
 text-decoration: none;
 }
 .photo-link-item:hover,
